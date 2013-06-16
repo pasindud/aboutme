@@ -1,0 +1,5 @@
+ if typeof twitter_feed!='undefined'
+   a.popup-with-move-anim(href='#small-dialog') @#{twitter} Twitter Feed
+
+     #small-dialog.zoom-anim-dialog.mfp-hide
+      p Show person's twitter stream

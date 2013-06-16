@@ -1,0 +1,8 @@
+{
+  "name": "magnific-popup",
+  "version": "0.8.9",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dimsemenov/Magnific-Popup.git"
+  }
+}

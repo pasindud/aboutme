@@ -1,0 +1,23 @@
+{
+  "name": "AboutMe-Geek-Style",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.2.5",
+    "jade": "*"
+  },
+  "readmeFilename": "README.md",
+  "description": "***Creates a portfolio markup platform",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": "",
+  "keywords": [
+    "portfolioobn",
+	"aboutme"
+  ],
+  "author": "Pasindu De Silva",
+  "license": "MIT"
+}

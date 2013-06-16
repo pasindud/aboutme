@@ -1,0 +1,40 @@
+extends layout
+
+block content
+  div.containter(style='#{style.content}')
+    div.main
+     h1.full_name=name
+     h2.h2_about_me About me
+     p.discription=discription
+     img(src="/images/location.png", alt="")
+     a.location=location
+    div.links
+     ul
+      if typeof facebook!='undefined' 	
+       li
+        a.facebook(href='http://facebook.com/#{facebook}')
+         img(src="/images/facebook-icon.png", alt="")
+      if typeof twitter!='undefined' 
+       li
+        a.twitter(href='http://twitter.com/#{twitter}')
+          img(src="/images/twitter-icon.png", alt="")
+      if typeof linkedin!='undefined' 
+       li
+        a.linkedin(href='http://linkedin.com/#{linkedin}')
+          img(src="/images/linkedin-icon.png", alt="")
+      if typeof googleplus!='undefined' 
+       li
+        a.googleplus(href='http://googleplus.com/#{googleplus}')
+         img(src="/images/google-icon.png", alt="")
+      if typeof github!='undefined' 
+       li
+         a.github(href='http://github.com/#{github}')
+          img(src="/images/Logos-Github-icon.png", alt="")
+
+    if typeof other_links!='undefined'
+    h3 Other Links 
+    ul
+      -for (var id in other_links)
+          - var other_link = other_links[id]
+          li
+            a.other_links(href='#{other_link.url}')=other_link.caption
