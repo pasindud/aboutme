@@ -7,7 +7,7 @@ live demo - [http://my-aboutme.herokuapp.com/pasindu](http://my-aboutme.herokuap
 
 
 
-### To add to myprofile, create a yourname.json file like the following and commit.
+*To add to my-aboutme, create a yourname.json file like the following and commit.
 
 ### Sample format for name.json 
 
@@ -57,3 +57,5 @@ node app
 ```
 
 Hope to do more work on this.
+
+License - MIT
