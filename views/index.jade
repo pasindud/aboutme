@@ -12,24 +12,24 @@ block content
      ul
       if typeof facebook!='undefined' 	
        li
-        a.facebook(href='http://facebook.com/#{facebook}')
-         img(src="http://icons.iconarchive.com/icons/graphics-vibe/classic-3d-social/48/facebook-icon.png", alt="")
+        a.facebook(href='http://facebook.com/#{facebook}',target="_blank")
+         img(src="/images/facebook-icon.png", alt="")
       if typeof twitter!='undefined' 
        li
-        a.twitter(href='http://twitter.com/#{twitter}')
-          img(src="http://icons.iconarchive.com/icons/graphics-vibe/classic-3d-social/48/twitter-icon.png", alt="")
+        a.twitter(href='http://twitter.com/#{twitter}',target="_blank")
+          img(src="/images/twitter-icon.png", alt="")
       if typeof linkedin!='undefined' 
        li
-        a.linkedin(href='http://www.linkedin.com/profile/view?id=#{linkedin}')
-          img(src="http://icons.iconarchive.com/icons/graphics-vibe/classic-3d-social/48/linkedin-icon.png", alt="")
+        a.linkedin(href='http://www.linkedin.com/profile/view?id=#{linkedin}',target="_blank")
+          img(src="/images/linkedin-icon.png", alt="")
       if typeof googleplus!='undefined' 
        li
-        a.googleplus(href='http://googleplus.com/#{googleplus}')
-         img(src="http://icons.iconarchive.com/icons/graphics-vibe/classic-3d-social/48/google-icon.png", alt="")
+        a.googleplus(href='https://plus.google.com/u/0/#{googleplus}',target="_blank")
+         img(src="/images/google-icon.png", alt="")
       if typeof github!='undefined' 
        li
-         a.github(href='http://github.com/#{github}')
-          img(src="http://icons.iconarchive.com/icons/visualpharm/icons8-metro-style/48/Logos-Github-icon.png", alt="")
+         a.github(href='http://github.com/#{github}',target="_blank")
+          img(src="/images/Logos-Github-icon.png", alt="")
 
     if typeof other_links!='undefined'
     h3 Other Links 
