@@ -21,7 +21,7 @@ exports.index = function(req, res){
 					location:details.location,
 					discription:details.discription,
 					other_links:details.other_links,
-					style:{content:details.style.content__style,custom:details.style.custom,theme:details.style.theme}
+					style:{content:details.style.content__style,custom:details.style.custom}
 				});
 			});
 	  } else {

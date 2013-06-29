@@ -2,7 +2,6 @@
 /**
  * Module dependencies.
  */
-var subdomains = require('express-subdomains');
 var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
@@ -12,6 +11,7 @@ var express = require('express')
 var app = express();
 
 // all environments
+app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.use(express.favicon());
@@ -22,7 +22,6 @@ app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-subdomains.use('');
 
   
 // development only
@@ -36,7 +35,6 @@ app.get('/', function(req,res){
 app.get('/:user', routes.index);
 app.get('/:user' ,routes.index )
 
-var port = process.env.PORT || 5000;
-app.listen(port, function() {
-  console.log("Listening on " + port);
+http.createServer(app).listen(app.get('port'), function(){
+  console.log('Express server listening on port ' + app.get('port'));
 });

@@ -2,10 +2,7 @@ doctype 5
 html
   head
     title= title
-    if typeof style.theme=='undefined'
-       link(rel='stylesheet', href='/themes/default.css')
-    else
-       link(rel='stylesheet', href='/themes/#{style.theme}.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
     script(src='javascripts/assets/jquery/jquery.js')
     script(src='assets/magnific-popup/dist/jquery.magnific-popup.min.js')
     link(rel='stylesheet', href='/assets/magnific-popup/dist/magnific-popup.css')	
