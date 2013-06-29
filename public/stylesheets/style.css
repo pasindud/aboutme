@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
@@ -16,9 +15,9 @@
   font-family: "MuseoSlab500Regular";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/Museo_Slab_500-webfont.eot?#iefix") format("embedded-opentype"), 
-  url("/fonts/Museo_Slab_500-webfont.woff") format("woff"), 
-  url("/fonts/Museo_Slab_500-webfont.ttf") format("truetype"), 
+  src: url("/fonts/Museo_Slab_500-webfont.eot?#iefix") format("embedded-opentype"),
+  url("/fonts/Museo_Slab_500-webfont.woff") format("woff"),
+  url("/fonts/Museo_Slab_500-webfont.ttf") format("truetype"),
   url("/fonts/Museo_Slab_500-webfont.svg#MuseoSlab500Regular") format("svg");
 }
 
@@ -28,35 +27,37 @@
   font-weight: 400;
   src: local("Open Sans"), local("OpenSans"), url("http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff") format("woff");
 }
+
+html{
+
+   background: url('/images/ps_neutral.png');
+}
 body {
-  	padding: 50px;
- 	/// background: url('http://d13pix9kaak6wt.cloudfront.net/background/ghosteyes17_1350670864_4.jpg');
- 	background: url('/images/ps_neutral.png');
-	background-color: #5CBDAB;
+   padding: 50px;
 }
 
 h2,h3,a{
-	  
-	  font-family: "Open Sans";
-	  color: #00000;
+
+font-family: "Open Sans";
+color: #00000;
 }
 
 h1{
-	font-family: "MuseoSlab500Regular";
-	text-shadow: 1px 1px rgb(204, 204, 204);
-	font-weight: normal;
-	letter-spacing: 1px;
+font-family: "MuseoSlab500Regular";
+text-shadow: 1px 1px rgb(204, 204, 204);
+font-weight: normal;
+letter-spacing: 1px;
 }
 
 p{
-	font-family: 'Roboto';
-	font-size: 16px;
-	font-weight:500;
+font-family: 'Roboto';
+font-size: 16px;
+font-weight:500;
 }
 
 .containter{
-  	padding: 20px;
-	width: 50%;
+   padding: 20px;
+	width: 40%;
 	height: auto;
 	opacity: 1;
 	margin:0px auto;
@@ -69,150 +70,150 @@ p{
 }
 
 ul{
-	padding: 0px;
+padding: 0px;
 }
 
 ul li a {
-	text-decoration: none;
+text-decoration: none;
 }
 
 ul li{
-	list-style-type: none;
+list-style-type: none;
 }
 
 .links ul li{
-	display: inline;
+display: inline;
 }
 
 /* Styles for dialog window */
 #small-dialog {
-	background: white;
-	padding: 20px 30px;
-	text-align: left;
-	max-width: 400px;
-	margin: 40px auto;
-	position: relative;
+background: white;
+padding: 20px 30px;
+text-align: left;
+max-width: 400px;
+margin: 40px auto;
+position: relative;
 }
 
 
 /**
- * Fade-zoom animation for first dialog
- */
+* Fade-zoom animation for first dialog
+*/
 
 /* start state */
 .my-mfp-zoom-in .zoom-anim-dialog {
-	opacity: 0;
+opacity: 0;
 
-	-webkit-transition: all 0.2s ease-in-out; 
-	-moz-transition: all 0.2s ease-in-out; 
-	-o-transition: all 0.2s ease-in-out; 
-	transition: all 0.2s ease-in-out; 
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
 
 
 
-	-webkit-transform: scale(0.8); 
-	-moz-transform: scale(0.8); 
-	-ms-transform: scale(0.8); 
-	-o-transform: scale(0.8); 
-	transform: scale(0.8); 
+-webkit-transform: scale(0.8);
+-moz-transform: scale(0.8);
+-ms-transform: scale(0.8);
+-o-transform: scale(0.8);
+transform: scale(0.8);
 }
 
 /* animate in */
 .my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
-	opacity: 1;
+opacity: 1;
 
-	-webkit-transform: scale(1); 
-	-moz-transform: scale(1); 
-	-ms-transform: scale(1); 
-	-o-transform: scale(1); 
-	transform: scale(1); 
+-webkit-transform: scale(1);
+-moz-transform: scale(1);
+-ms-transform: scale(1);
+-o-transform: scale(1);
+transform: scale(1);
 }
 
 /* animate out */
 .my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
-	-webkit-transform: scale(0.8); 
-	-moz-transform: scale(0.8); 
-	-ms-transform: scale(0.8); 
-	-o-transform: scale(0.8); 
-	transform: scale(0.8); 
+-webkit-transform: scale(0.8);
+-moz-transform: scale(0.8);
+-ms-transform: scale(0.8);
+-o-transform: scale(0.8);
+transform: scale(0.8);
 
-	opacity: 0;
+opacity: 0;
 }
 
 /* Dark overlay, start state */
 .my-mfp-zoom-in.mfp-bg {
-	opacity: 0;
-	-webkit-transition: opacity 0.3s ease-out; 
-	-moz-transition: opacity 0.3s ease-out; 
-	-o-transition: opacity 0.3s ease-out; 
-	transition: opacity 0.3s ease-out;
+opacity: 0;
+-webkit-transition: opacity 0.3s ease-out;
+-moz-transition: opacity 0.3s ease-out;
+-o-transition: opacity 0.3s ease-out;
+transition: opacity 0.3s ease-out;
 }
 /* animate in */
 .my-mfp-zoom-in.mfp-ready.mfp-bg {
-	opacity: 0.8;
+opacity: 0.8;
 }
 /* animate out */
 .my-mfp-zoom-in.mfp-removing.mfp-bg {
-	opacity: 0;
+opacity: 0;
 }
 
 
 
 /**
- * Fade-move animation for second dialog
- */
+* Fade-move animation for second dialog
+*/
 
 /* at start */
 .my-mfp-slide-bottom .zoom-anim-dialog {
-	opacity: 0;
-	-webkit-transition: all 0.2s ease-out;
-	-moz-transition: all 0.2s ease-out;
-	-o-transition: all 0.2s ease-out;
-	transition: all 0.2s ease-out;
+opacity: 0;
+-webkit-transition: all 0.2s ease-out;
+-moz-transition: all 0.2s ease-out;
+-o-transition: all 0.2s ease-out;
+transition: all 0.2s ease-out;
 
-	-webkit-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
-	-moz-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
-	-ms-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
-	-o-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
-	transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+-webkit-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+-moz-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+-ms-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+-o-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
 
 }
 
 /* animate in */
 .my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
-	opacity: 1;
-	-webkit-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
-	-moz-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
-	-ms-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
-	-o-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
-	transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+opacity: 1;
+-webkit-transform: translateY(0) perspective( 600px ) rotateX( 0 );
+-moz-transform: translateY(0) perspective( 600px ) rotateX( 0 );
+-ms-transform: translateY(0) perspective( 600px ) rotateX( 0 );
+-o-transform: translateY(0) perspective( 600px ) rotateX( 0 );
+transform: translateY(0) perspective( 600px ) rotateX( 0 );
 }
 
 /* animate out */
 .my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
-	opacity: 0;
+opacity: 0;
 
-	-webkit-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
-	-moz-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
-	-ms-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
-	-o-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
-	transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+-webkit-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg );
+-moz-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg );
+-ms-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg );
+-o-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg );
+transform: translateY(-10px) perspective( 600px ) rotateX( 10deg );
 }
 
 /* Dark overlay, start state */
 .my-mfp-slide-bottom.mfp-bg {
-	opacity: 0;
+opacity: 0;
 
-	-webkit-transition: opacity 0.3s ease-out; 
-	-moz-transition: opacity 0.3s ease-out; 
-	-o-transition: opacity 0.3s ease-out; 
-	transition: opacity 0.3s ease-out;
+-webkit-transition: opacity 0.3s ease-out;
+-moz-transition: opacity 0.3s ease-out;
+-o-transition: opacity 0.3s ease-out;
+transition: opacity 0.3s ease-out;
 }
 /* animate in */
 .my-mfp-slide-bottom.mfp-ready.mfp-bg {
-	opacity: 0.8;
+opacity: 0.8;
 }
 /* animate out */
 .my-mfp-slide-bottom.mfp-removing.mfp-bg {
-	opacity: 0;
+opacity: 0;
 }
