@@ -17,7 +17,8 @@
     "github" 	: "pasindud"
   },
 
-  "other_links":[{
+  "other_links":[
+    {
 	  "url"		  : "http://pasindu.us",
 	  "caption"	: "Personal Site",
 	  "icon"	  : "none" 
@@ -31,6 +32,11 @@
 	  "url"		  	: "https://github.com/pasindud/aboutme",
 	  "caption"		: "This About Me Repo On GitHub",
 	  "icon"	  		: "none" 
-  	}
+  	},
+   {
+    "url"       : "https://blog.pasindu.us",
+    "caption"   : "My Blog",
+    "icon"      : "none" 
+    }
   ]
 }
