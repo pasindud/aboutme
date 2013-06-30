@@ -23,7 +23,7 @@ exports.index = function(req, res){
 					other_links:details.other_links,
 					style:{content:details.style.content_style , custom:details.style.custom}
 				});
-			});
+			}); 
 	  } else {
 	    res.redirect('/pasindu');
 	  }

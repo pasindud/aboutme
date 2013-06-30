@@ -1,39 +1,46 @@
+// ==========================================
+// About me
+// ==========================================
+// Author   : Pasindu De Silva
+// License  : MIT (c) Pasindu De Silva
+// Github   : http://github.com/pasindud
+// ==========================================
 
-/**
- * Module dependencies.
- */
-var express = require('express')
-  , routes = require('./routes')
-  , http = require('http')
-  , path = require('path');
+var express = require('express'),
+    app = module.exports = express.createServer();
 
-var app = express();
+var routes = require('./routes')
+
+var appid=1000,appw=5000;
 
 // all environments
-app.set('port', process.env.PORT || 3000);
-app.set('views', __dirname + '/views');
-app.set('view engine', 'jade');
-app.use(express.favicon());
-//app.use(express.logger('dev'));
-app.use(express.bodyParser());
-app.use(express.methodOverride());
-app.use(app.router);
-app.use(express.static(path.join(__dirname, 'public')));
 
+app.configure(function() {
+  app.set("views", __dirname + "/views");
+  app.set("view engine", "jade");
+  app.use(express.bodyParser());
+  app.use(express.methodOverride());
+  app.use(express.cookieParser());
+  app.use(app.router);
+  return app.use(express["static"](__dirname + "/public"));
+});
 
-
-  
-// development only
-if ('development' == app.get('env')) {
-  app.use(express.errorHandler());
-}
+app.configure("development", function() {
+  return app.use(express.errorHandler({
+    dumpExceptions: true,
+    showStack: true
+  }));
+});
 
 app.get('/', function(req,res){
 	res.redirect('/pasindu');
 });
 app.get('/:user', routes.index);
-app.get('/:user' ,routes.index )
 
-http.createServer(app).listen(app.get('port'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
-});
+
+
+
+var port = process.env.PORT || 8080;
+
+app.listen(port);
+console.log("Express server listening on port %d in mode", app.address().port);

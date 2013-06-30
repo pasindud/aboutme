@@ -6,7 +6,7 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "express": "3.2.5",
+    "express": "2.5.8",
     "jade": "*"
   },
   "readmeFilename": "README.md",
@@ -15,7 +15,7 @@
   "devDependencies": {},
   "repository": "",
   "keywords": [
-    "portfolioobn",
+    "portfolio",
 	"aboutme"
   ],
   "author": "Pasindu De Silva",

@@ -7,10 +7,9 @@ html
     script(src='assets/magnific-popup/dist/jquery.magnific-popup.min.js')
     link(rel='stylesheet', href='/assets/magnific-popup/dist/magnific-popup.css')	
     script(src='javascripts/pop.js')
-  body
+  body!= body
 
     if typeof  style.custom!='undefined'
       style.
          #{style.custom}
-    block content
  

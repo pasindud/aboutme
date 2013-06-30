@@ -1,13 +1,10 @@
-extends layout
-
-block content
-  div.containter(style='#{style.content}')
+div.containter(style='#{style.content}')
     div.main
-     h1.full_name=name
-     h2.h2_about_me About me
-     p.discription=discription
-     img(src="/images/location.png", alt="")
-     a.location=location
+      h1.full_name=name
+      h2.h2_about_me About me
+      p.discription=discription
+      img(src="/images/location.png", alt="")
+      a.location=location
     div.links
      ul
       if typeof facebook!='undefined' 	
