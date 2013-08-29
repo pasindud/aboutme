@@ -14,7 +14,7 @@ Continuous Deployment using [https://drone.io](https://drone.io)
 {
   "name" 		 : "Your Name",
   "location"     : "you location",
-  "discription"  : "about u",		
+  "description"  : "about u",		
  
   "style":{
   	"content_style":"",  	// styling the container holding all your data
