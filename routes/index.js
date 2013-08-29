@@ -19,7 +19,7 @@ exports.index = function(req, res){
 					googleplus:details.links.googleplus,
 					github:details.links.github,
 					location:details.location,
-					discription:details.discription,
+					description:details.description,
 					other_links:details.other_links,
 					style:{content:details.style.content_style , custom:details.style.custom}
 				});
