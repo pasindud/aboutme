@@ -1,7 +1,7 @@
 {
   "name" 		 : "Pasindu De Silva",
   "location"     : "Lives On Earth",
-  "discription"  : "I am Pasindu De Silva at 18 current a undergrad doing Bsc in Computer Science and this about me the Geek Style, hope to integrate many things to this. The only thing you have todo is to make your aboutme.json file and send a pull request which will be deployed.",
+  "description"  : "I am Pasindu De Silva at 18 current a undergrad doing Bsc in Computer Science and this about me the Geek Style, hope to integrate many things to this. The only thing you have todo is to make your aboutme.json file and send a pull request which will be deployed.",
  
   "style":{
   	"content_style"	: 	"float:right; ",
