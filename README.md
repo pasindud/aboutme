@@ -1,11 +1,10 @@
-
 #[Aboutme](https://github.com/pasindud/myprofile) 
 
 Creates a aboutme page in geek style using a .json file where all details servered from.
 
 live demo - [http://my-aboutme.herokuapp.com/pasindu](http://my-aboutme.herokuapp.com/pasindu)
 
-
+Continuous Deployment using [https://drone.io](https://drone.io)
 
 *To add to my-aboutme, create a yourname.json file like the following and commit.
 
