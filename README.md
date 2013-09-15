@@ -58,3 +58,7 @@ node app
 Hope to do more work on this.
 
 License - MIT
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/pasindud/aboutme/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
